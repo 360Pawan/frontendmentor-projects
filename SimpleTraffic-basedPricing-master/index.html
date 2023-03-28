@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mainStyle.css" />
+    <script defer src="js/main.js"></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <main class="card">
+      <figure class="bg">
+        <img
+          src="images/bg-pattern.svg"
+          alt="Background-image"
+          class="bg-img"
+        />
+      </figure>
+      <section class="container">
+        <header class="header">
+          <h1 class="heading-1">Simple, traffic-based pricing</h1>
+          <p class="paragraph mt-md">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+          <figure class="bg--header">
+            <img
+              src="images/pattern-circles.svg"
+              alt="Background-image"
+              class="bg-img"
+            />
+          </figure>
+        </header>
+        <div class="pricing__box">
+          <div class="pageViews">
+            <span class="js-pageViews">100k</span> Pageviews
+          </div>
+          <div class="pricing">
+            <span class="month js-price">$16</span>
+            /month
+          </div>
+          <form class="slider" autocomplete="off">
+            <label for="rangeSlider"></label>
+            <div class="bar"><span class="fill js-fill"></span></div>
+            <input
+              type="range"
+              min="20"
+              max="100"
+              value="60"
+              step="20"
+              name="PriceSelected"
+              class="slider__range js-slider"
+              id="rangeSlider"
+            />
+            <button class="scr-rdr" type="submit">No submit</button>
+          </form>
+          <div class="billing">
+            <span class="billing--month">Monthly Billing</span>
+            <form autocomplete="off">
+              <label class="switch ml-sm">
+                <input type="checkbox" class="js-toggle" />
+                <span class="toggle round"></span>
+              </label>
+              <button class="scr-rdr" type="submit">No submit</button>
+            </form>
+            <span class="year ml-sm">Yearly Billing</span>
+            <span class="discount ml-sm"> 25% discount</span>
+          </div>
+          <div class="feature">
+            <ul class="feature__list">
+              <li class="feature__list--item">
+                <img
+                  src="images/icon-check.svg"
+                  alt="Check mark"
+                  class="feature--img"
+                />
+                Unlimited websites
+              </li>
+              <li class="feature__list--item">
+                <img
+                  src="images/icon-check.svg"
+                  alt="Check mark"
+                  class="feature--img"
+                />
+                100% data ownership
+              </li>
+              <li class="feature__list--item">
+                <img
+                  src="images/icon-check.svg"
+                  alt="Check mark"
+                  class="feature--img"
+                />
+                Email reports
+              </li>
+            </ul>
+            <button class="btn js-btn">Start my trial</button>
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.pawanjs.com/">Pawan JS</a>.
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+.modal {
+  &__success,
+  &__project {
+    background: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    transition: all 0.3s;
+    // This will hide modal
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  &__success {
+    max-width: 45rem;
+    text-align: center;
+    visibility: hidden;
+
+    &--icon {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &--overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    // This will hide overlay
+    opacity: 0;
+  }
+
+  &__project {
+    max-width: 70rem;
+
+    @media only screen and (max-width: 40em) {
+      max-height: 80vh;
+      max-width: 80vw;
+      overflow-y: scroll;
+    }
+
+    &--header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+    grid-gap: 1rem;
+
+    @media only screen and (max-width: 32em) {
+      grid-template-columns: min-content 1fr;
+      justify-items: start;
+    }
+
+    p {
+      grid-column: 2 / 4;
+
+      @media only screen and (max-width: 32em) {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (max-width: 32em) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    & span {
+      margin-left: 2rem;
+      @media only screen and (max-width: 32em) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__pledge {
+    grid-column: 1 / -1;
+    border-top: 1.8px solid hsla(0, 0%, 48%, 0.2);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    // This will hide pledge section
+    display: none;
+
+    @media only screen and (max-width: 32em) {
+      grid-row-gap: 2rem;
+      justify-items: center;
+    }
+
+    &--text {
+      @media only screen and (max-width: 32em) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    &--text,
+    &--amount {
+      font-size: 1.6rem;
+      font-family: inherit;
+      border: none;
+      color: hsl(0, 0%, 48%);
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--box {
+      display: flex;
+      align-items: center;
+      justify-self: end;
+
+      @media only screen and (max-width: 32em) {
+        justify-self: center;
+        grid-column: 1 / -1;
+      }
+    }
+
+    &--amount {
+      width: 6rem;
+      margin: 0 1.3rem;
+    }
+  }
+
+  &__about--left {
+    @media only screen and (max-width: 32em) {
+      grid-area: 3 / 1 / 4 / -1;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  // Javascript classes to activate modals
+  &__pledge--active {
+    display: grid;
+  }
+
+  &--active {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &--overlay-active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

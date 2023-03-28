@@ -1,0 +1,21 @@
+main {
+  padding: 10rem;
+  background-color: $dark-blue-main;
+
+  @media screen and (max-width: 36em) {
+    padding: 5rem;
+  }
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.attribution a {
+  color: $white;
+  transition: color 0.3s;
+
+  &:hover {
+    color: rgba($white, 0.8);
+  }
+}

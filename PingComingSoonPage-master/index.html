@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mainStyle.css" />
+    <script defer src="js/main.js"></script>
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <header class="header">
+      <figure class="logo-box">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+      </figure>
+      <h1 class="heading-1 mt-lg">We are launching <span>soon!</span></h1>
+      <p class="paragraph mt-sm">Subscribe and get notified</p>
+      <form class="form js-form mt-md">
+        <label for="email"></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="js-email"
+          placeholder="your email address"
+        />
+        <span class="error-msg js-error-msg"></span>
+        <button class="btn js-btn">Notify Me</button>
+      </form>
+    </header>
+    <main class="main">
+      <figure class="main-img-box">
+        <img
+          src="images/illustration-dashboard.png"
+          alt="Dashboard"
+          class="main-img"
+        />
+      </figure>
+      <div class="socials-container mt-lg">
+        <a href="#" class="social--link">
+          <svg class="social--icon">
+            <use xlink:href="images/sprite.svg#facebook"></use>
+          </svg>
+          <span class="scr-only">Facebook Icon</span>
+        </a>
+        <a href="#" class="social--link">
+          <svg class="social--icon">
+            <use xlink:href="images/sprite.svg#twitter"></use>
+          </svg>
+          <span class="scr-only">Twitter Icon</span>
+        </a>
+        <a href="#" class="social--link">
+          <svg class="social--icon">
+            <use xlink:href="images/sprite.svg#instagram"></use>
+          </svg>
+          <span class="scr-only">Instagram Icon</span>
+        </a>
+      </div>
+      <p class="copyright mt-sm">&copy; Copyright Ping. All rights reserved.</p>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.pawanjs.com/">Pawan JS</a>.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.container {
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+
+.heading-1 {
+  font-size: calc(1.8rem + 1.2vw);
+  font-weight: 500;
+  color: $heading-color;
+}
+
+.heading-4 {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 2rem;
+  color: $paragraph-color;
+}
+
+.small {
+  font-size: 1rem;
+  color: hsl(276, 100%, 81%);
+}

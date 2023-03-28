@@ -1,0 +1,49 @@
+.footer {
+  background: hsl(240, 10%, 16%);
+  border-top-right-radius: 10rem;
+  padding: 5rem 3rem;
+
+  &__logo {
+    &-icon {
+      width: 8rem;
+      height: 4rem;
+    }
+  }
+
+  &--wrapper {
+    max-width: 144rem;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+
+    @media only screen and(min-width:35em) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    a {
+      text-decoration: none;
+      color: hsl(240, 2%, 79%);
+    }
+
+    .heading-4 {
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
+  .attribution {
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+
+    a {
+      color: hsl(356, 100%, 66%);
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: hsl(0, 0%, 100%);
+      }
+    }
+  }
+}

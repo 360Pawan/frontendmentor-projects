@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="css/mainStyles.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <figure class="share__item">
+        <img src="images/drawers.jpg" alt="Drawers" class="share__img" />
+      </figure>
+      <div class="share__text">
+        <h1 class="heading-1 js-title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="paragraph js-description">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="share__author-details">
+          <figure class="share__author--item">
+            <img
+              src="images/avatar-michelle.jpg"
+              alt="michelle(author)"
+              class="share__author--img js-image"
+            />
+          </figure>
+          <div class="share__author--name">
+            Michelle Appleton
+            <span> 28 Jun 2020 </span>
+          </div>
+          <a href="#" class="share js-share">
+            <span class="scr-only">share button</span>
+            <svg class="share--icon">
+              <use xlink:href="images/sprite.svg#icon-share"></use>
+            </svg>
+          </a>
+          <div class="share__social-box js-box">
+            <span>Share</span>
+            <a href="" class="share__social--link js-fb">
+              <span class="scr-only">share on facebook</span>
+              <svg class="share__social--icon icon-facebook">
+                <use xlink:href="images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="" class="share__social--link js-twitter">
+              <span class="scr-only">share on Twitter</span>
+              <svg class="share__social--icon icon-twitter">
+                <use xlink:href="images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="" class="share__social--link js-pinterest">
+              <span class="scr-only">share on pinterest</span>
+              <svg class="share__social--icon icon-pinterest">
+                <use xlink:href="images/sprite.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.pawanjs.com/">Pawan JS</a>.
+    </footer>
+  </body>
+</html>

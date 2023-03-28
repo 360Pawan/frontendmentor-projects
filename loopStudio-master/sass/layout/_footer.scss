@@ -1,0 +1,15 @@
+.footer {
+  &--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
